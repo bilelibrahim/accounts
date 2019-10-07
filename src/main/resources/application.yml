@@ -1,0 +1,33 @@
+server:
+  port: 8085
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: accounts
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/accounts
+  kafka:
+    bootstrap-servers: localhost:9092
+    topic:
+      accounts-customer: accounts.customer.change
+    consumer:
+      group-id: accounts
+      auto-offset-reset: earliest
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+logging:
+  level:
+    root: DEBUG
+---
+server:
+  port: 8080
+spring:
+  profiles: gke
+logging:
+  level:
+    root: INFO
