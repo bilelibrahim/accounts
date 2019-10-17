@@ -32,7 +32,7 @@ public class SwaggerConfig {
         return new ApiInfoBuilder()
                 .title("Storefront Demo - Accounts API")
                 .description("Spring Boot demo application, backed by MongoDB and Kafka.")
-                .termsOfServiceUrl("https://programmaticponderings.com")
+                .termsOfServiceUrl("")
                 .contact(new Contact(
                         "Bilel I",
                         "",
