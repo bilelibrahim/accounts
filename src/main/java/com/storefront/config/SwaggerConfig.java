@@ -35,10 +35,10 @@ public class SwaggerConfig {
                 .termsOfServiceUrl("https://programmaticponderings.com")
                 .contact(new Contact(
                         "Bilel I",
-                        "https://programmaticponderings.com/about",
+                        "",
                         "bilel.brahim@gmail.com"))
                 .license("Apache License Version 2.0")
-                .licenseUrl("https://github.com/bilel/demo-accounts/blob/master/LICENSE")
+                .licenseUrl("https://github.com/bilel/accounts/blob/master/LICENSE")
                 .version("2.1.0")
                 .build();
     }
